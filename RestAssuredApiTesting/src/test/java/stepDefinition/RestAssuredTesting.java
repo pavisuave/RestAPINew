@@ -23,8 +23,8 @@ public class RestAssuredTesting {
 	//Scenario scenario;
 	
 	public RestAssuredTesting() {
-		// TODO Auto-generated constructor stub
-	}
+	// TODO Auto-generated constructor stub
+  }
 	//@Before
 	//public void before(Scenario scenario) {
 	//	this.scenario=scenario;
@@ -41,6 +41,7 @@ public void response_is(String status) {
 	int actualResponseCode=response.then().extract().statusCode();
      assertEquals(status, actualResponseCode +"");
      System.out.println(status+" "+actualResponseCode);
+     //share report
 }
 
 	
